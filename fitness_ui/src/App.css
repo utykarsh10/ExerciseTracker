@@ -1,0 +1,177 @@
+body {
+  /* max-width:1500px;   Keeps the viewport from being wider than is comfortable to use. */
+  margin:0 auto;     /* Places the content in the center of the viewport.*/
+  padding:0;         /* Removes default padding from the viewport. */
+  font-size:.95em;   /* Sets the size for all text. */
+  font-family:Verdana, Geneva, Tahoma, sans-serif;   
+  color:#006A8E;     /* An OSU color */
+  background-color: #000; /* Black is also an OSU color */
+  }
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: gray;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Import a new font form Google Fonts so that headlines are more interesting */
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap'); 
+h1, h2, h3, h4, h5, h6 {  
+  font-family: 'Yeseva One', cursive;
+  /* color:#00859B; */
+  color: rgb(230, 185, 35);
+
+
+}
+
+header, footer {
+  position: absolute;
+  top: 0;
+  width: 60%;
+   font-size:200%; 
+  font-family: 'Yeseva One', cursive;
+  background-color:#D3832B;  /* An OSU color */
+  
+  /* background-attachment: fixed; */
+  background-size:400px;
+  margin:0 auto; /* Centers these blocks within the body. */
+  padding:1% 20% 4% 20%; /* Keeps the text and images from touching the edge. */
+  text-align:center; /* Aligns text and images in the center of the block. */
+}
+
+main { /* In the HTML, this block goes below the <header> and includes <article>*/
+
+  padding:3%;
+  margin-top:-20px; /* Move it up a bit so the navigation can sit on top of it. */
+}
+
+table {   
+  border: 5px solid #282c34;
+  width: 1000px;
+  height: 200px ;
+  border-collapse:collapse; /* Always do this! */
+}
+
+
+h1 {
+  position: relative;
+  bottom: 100px;
+  color: white;
+  font-size:small;
+}
+caption {
+  padding: 20px;
+}
+th  {  
+  background-color: rgb(230, 185, 35);
+  border: 5px solid black ;
+  color: black;
+  text-align: left; 
+}
+td {
+
+  border: 5px solid black ;
+  color:black
+}
+tr:nth-child(even) {  
+  background-color: rgba(245, 245, 245, 0.564);
+} /* Zebra Striping with Hex alpha channel opacity setting*/
+
+tr:nth-child(odd) {
+  background-color: white
+}
+td:nth-child(1), 
+td:nth-child(2) {
+width:8.5%; /* Set widths for number columns so they aren't wider than necessary.*/
+} 
+
+
+tr {
+  text-align: center; 
+  
+}
+
+legend {
+  color: black;
+  padding: 10px;
+  font-family: Arial;
+  text-align: center;
+}
+
+fieldset {
+  color: black;
+  padding: 10px;
+  font-family: Arial;
+  text-align: center;
+}
+
+label{ 
+  border-color:black;
+  color: black;
+  font-family: Arial;
+  text-align: center;
+} 
+
+input {
+  
+  font-size: 25px;
+  width: 250px;
+  height: 50px;
+  padding: 25 px;
+  color:  black;
+
+  border: black;
+} 
+
+button {
+  line-height: 18px;
+  background-color: black; 
+  border: black;
+  margin-top: 30px;
+  color: white;
+  padding: 14px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 50%;
+}
+
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+} 
+
