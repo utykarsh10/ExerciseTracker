@@ -71,7 +71,7 @@ app.get('/exercises', (req, res) => {
         });
 });
 
-/**
+/*
  * Update the exercise whose id is provided in the path parameter and set
  * its title, year and language to the values provided in the body.
  */
